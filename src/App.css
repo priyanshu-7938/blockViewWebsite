@@ -1,0 +1,199 @@
+.code{
+    font-family: 'Share Tech Mono', monospace;
+}
+.wait_style{
+    padding: 10px 10% 20px 10%;
+}
+.wait_style div{
+    text-align: center;
+    font-size: 42px;
+    margin: 5px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    background: linear-gradient(to top left, #1A6DFF 30%, #C822FF 70%);
+    animation: gradientAnimation 5s linear infinite;
+    background-size: 200% 200%;
+    color: #F8E8EE;
+}
+.disabled{
+    opacity: 0.5;
+    filter: grayscale(100%);
+    pointer-events: none !important ;
+}
+.hop {
+    animation: hopAnimation 0.5s ease-in-out;
+}
+@keyframes hopAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.shake {
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    filter: grayscale(60%);
+    animation: shake 0.7s ease-in-out ;
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateX(-10px);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(10px);
+    }
+}
+
+/* nav{
+
+} */
+nav h1{
+    font-family: 'VT323', monospace;
+    background: linear-gradient(to bottom, #1A6DFF, #C822FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin:  0 0 0 7px !important;
+    font-size: 50px;
+        /* color:#1A6DFF;
+    color :#C822FF;
+    color :#6DC7FF;
+    color:#E6ABFF;  */
+}
+nav a{
+    border: 2px solid #FDCEDF;
+    margin: 0 10px 0 auto;
+    border-radius:13px;
+    padding: 3px 5px;
+    text-decoration:none;
+}
+nav a:hover{
+    background: linear-gradient(to right, #1A6DFF, #C822FF);
+    color:white;
+    /* animation: ease-in-out  2s; */
+    padding: 3px 5px;
+    text-decoration:none;
+}
+/* ----header section----- */
+.header{
+    padding: 7% 10% 20px 10%;
+}
+.header h1,button{
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+}
+.flex{
+    display: flex;
+    padding: 20px 10% 5px 10%;
+}
+.header--input{
+    font-family: 'Share Tech Mono', monospace;
+    margin: 3px;
+    height: 40px;
+    /* border-radius: 4px; */
+    padding: 5px;
+    font-size: 40px;
+    height: 70px;
+    width: 50%;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 10px;
+    /* border-image: linear-gradient(to right, #1A6DFF, #C822FF); */
+}
+.header--button{
+    height: auto;
+    border-radius: 10px;
+    width: 50%;
+    border: 7px;
+    margin :3px;
+    font-size: 40px;
+    background: linear-gradient(to right, #1A6DFF, #C822FF);
+    color:white;
+    
+    
+    /* width:20%; */
+}
+/* animation: gradient 5s linear infinite alternate;
+background: linear-gradient(to right, #1A6DFF, #C822FF);
+background-size: 200% 100%;
+} */
+
+@keyframes gradient {
+    0%, 100% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+}
+.hader button:active,button:focus{
+    outline: none;
+    border: none;
+}
+.header button:active{
+    transform: translateY(2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+}
+.hader button:hover{
+    background: linear-gradient(to bottom, #1A6DFF, #C822FF);
+    color:white;
+
+}
+.header p{
+    width: 250px;
+    margin: 0 10px 20px auto;
+}
+.header--navi{
+    display: flex;
+    justify-content: space-between ;
+}
+
+/* css for the section which display data */
+
+.body{
+    padding: 7% 10% 20px 10%;
+}
+.body div{
+    margin: 5px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    background: linear-gradient(to top left, #1A6DFF 30%, #C822FF 70%);
+    animation: gradientAnimation 15s linear infinite;
+    background-size: 200% 200%;
+    color: #F8E8EE;
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    /* grid-gap: 4px; */
+}
+.diff{
+    grid-template-columns: 2fr 8fr !important;
+}
+@keyframes gradientAnimation {
+    0%, 100% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+}
+.label{
+    font-weight: 600;
+    font-family: 'Roboto Mono', monospace;
+}
+.value{
+    font-family: 'Share Tech Mono', monospace;
+
+}
+/* -----overlay content----- */
+span{
+    font-size: 12px;
+}
